@@ -10,7 +10,7 @@ This Tableau dashboard provides a comprehensive analysis of the impact of variou
 **Economic Indicators:**  Displays GDP, unemployment rates, and other economic factors.<br/>
 
 link - https://nikhilk-crypto.github.io/Economical-factors-on-Suicide-Rate/
-
+<br/><br/>
 ### Data Source
 The data is sourced from the Kaggle dataset on [**Suicide Rates & Socioeconomic Factors (1990 - 22)**](https://www.kaggle.com/datasets/ronaldonyango/global-suicide-rates-1990-to-2022/data?select=age_std_suicide_rates_1990-2022.csv). This dataset includes:
 
