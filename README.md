@@ -1,0 +1,1 @@
+# Economical-factors-on-Suicide-Rate
