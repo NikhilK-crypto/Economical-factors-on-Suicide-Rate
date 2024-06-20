@@ -1,5 +1,5 @@
-# Economical-factors-on-Suicide-Rate
-
+# Economical factors on Suicide Rate Tableau Dashboard
+ 
 
 <p align="justify">
 This Tableau dashboard provides a comprehensive analysis of the impact of various economic factors on suicide rates, both globally and at the individual country level. It uses interactive visualizations to present insights on how economic conditions correlate with suicide rates.<br/>
