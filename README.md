@@ -1,8 +1,7 @@
 # Economical factors on Suicide Rate Tableau Dashboard
- 
-
 <p align="justify">
-This Tableau dashboard provides a comprehensive analysis of the impact of various economic factors on suicide rates, both globally and at the individual country level. It uses interactive visualizations to present insights on how economic conditions correlate with suicide rates.<br/>
+This Tableau dashboard provides a comprehensive analysis of the impact of various economic factors on suicide rates, both globally and at the individual country level. It uses interactive visualizations to present insights on how economic conditions correlate with suicide rates. 
+</p>
 
 **Global Analysis:**  Compares suicide rates across different development categories worldwide.<br/>
 **Country-Specific Analysis:**  Focuses on the economic factors affecting suicide rates within individual countries.<br/>
@@ -19,8 +18,10 @@ The data is sourced from the Kaggle dataset on [**Suicide Rates & Socioeconomic 
 **Demographic Information:** Data segmented by age, gender, and country.<br/>
 The dataset is comprehensive, covering multiple decades and allowing for in-depth analysis of trends and patterns.
 
+
 ### SQL 
-In this project, I connect MySQL to Tableau. Various SQL queries were used to manipulate and analyze the data. The dataset consisted of rows for male and female suicide rates and counts for each country and year, while the other economic indicators remained the same for both rows. To properly analyze the data, I merged these rows by keeping the economic factors constant, summing the suicide count columns, removing the default suicide rate, and calculating a new one. Additionally, countries were categorized into undeveloped, developing (lower middle income), developing (upper middle income), and developed to examine suicide rates by development levels, also we recalculated economic factors for each devlopment level. 
+<p align="justify">
+In this project, I connect MySQL to Tableau. Various SQL queries were used to manipulate and analyze the data. The dataset consisted of rows for male and female suicide rates and counts for each country and year, while the other economic indicators remained the same for both rows. To properly analyze the data, I merged these rows by keeping the economic factors constant, summing the suicide count columns, removing the default suicide rate, and calculating a new one. Additionally, countries were categorized into undeveloped, developing (lower middle income), developing (upper middle income), and developed to examine suicide rates by development levels, also we recalculated economic factors for each devlopment level. </p>
 
 ```sql
 SELECT DevelopmentCategory, year, 
@@ -33,5 +34,3 @@ FROM country_suiciderate
 GROUP BY DevelopmentCategory, year;
 ```
 
-
-<p>
