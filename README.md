@@ -19,4 +19,19 @@ The data is sourced from the Kaggle dataset on [**Suicide Rates & Socioeconomic 
 **Demographic Information:** Data segmented by age, gender, and country.<br/>
 The dataset is comprehensive, covering multiple decades and allowing for in-depth analysis of trends and patterns.
 
+### SQL 
+In this project, I connect MySQL to Tableau. Various SQL queries were used to manipulate and analyze the data. The dataset consisted of rows for male and female suicide rates and counts for each country and year, while the other economic indicators remained the same for both rows. To properly analyze the data, I merged these rows by keeping the economic factors constant, summing the suicide count columns, removing the default suicide rate, and calculating a new one. Additionally, countries were categorized into undeveloped, developing (lower middle income), developing (upper middle income), and developed to examine suicide rates by development levels, also we recalculated economic factors for each devlopment level. 
+
+```sql
+SELECT DevelopmentCategory, year, 
+  SUM(GDP)/SUM(population) AS 'GDP PerCapita', 
+  SUM(GNI)/SUM(population) AS 'GNI PerCapita', 
+  (SUM(suicidecount)/SUM(population))*100000 AS 'SuicideRate', 
+  SUM(InflationRate * GDP)/ SUM(GDP) AS 'WeightedAverageInflationRate',
+  SUM(EmploymentPopulationRatio * Population)/SUM(Population) AS 'WeightedAverageEmploymentRate'
+FROM country_suiciderate 
+GROUP BY DevelopmentCategory, year;
+```
+
+
 <p>
